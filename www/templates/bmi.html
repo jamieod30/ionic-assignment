@@ -1,0 +1,84 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>BMI</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+	
+  </head>
+  <body ng-app="Calorie">
+
+	<ion-nav-view>
+    </ion-nav-view>
+
+    <ion-pane>
+<ion-view title="BMI">
+      <ion-content>
+	  <br>
+	  <br>
+	  <br>
+	  
+	  <div class="list list-inset">
+		<label class="item item-input">
+			<span class="input-label">Weight</span>
+            <input type="number" ng-model="weight" placeholder="kg" />
+          </label>
+		  <br>
+		<label class="item item-input">
+			<span class="input-label">Height</span>
+            <input type="number" ng-model="height" placeholder ="centimeters"/>
+          </label>
+		  <br>
+		 <button class="button button-outline button-balanced" id = "BMI" ng-click = "BMI = weight/(height*height)*10000">
+           BMI
+          </button> 
+		  <br>
+		  <br>
+		 <br>
+		 <label class="item item-input">
+			<span class="input-label">Your BMI</span>
+            <input type="number" ng-model="BMI"  />
+          </label>
+		<br>
+			<button class="button button-outline button-balanced" ng-click="BMI= 0">
+            Reset
+          </button>		
+		</div>
+		<br>
+		<br>
+		<br>		
+     </ion-content>
+	 </ion-view>
+	 <br>
+	 <br>
+    <div class="bar bar-footer bar-stable">
+	<button class="button icon-left ion-arrow-left-a"ui-sref="tab.calculatormenu">
+		Back </button>	
+	<button class="button icon-right ion-home"ui-sref="tab.home">
+		Home </button
+        <div class="title"></div>
+    </div>	
+    </ion-pane>
+  </body>
+  <!--<script>
+  round bmi
+  </script>
+  -->
+</html>
+
