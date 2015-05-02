@@ -12,3 +12,21 @@ angular.module('calorific', ['ionic'])
     }
   });
 })
+
+.config(function($stateProvider, $urlRouterProvider) {
+
+	$stateProvider
+	
+		.state('home', {
+		  url: "/home",
+		  templateUrl: "index.html"
+		})
+		
+		.state('app', {
+		  url: "/app",
+		  templateUrl: "app.html"
+		});
+		
+		// if none of the above states are matched use this as the fallback
+	$urlRouterProvider.otherwise('/home');
+});
