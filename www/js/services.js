@@ -270,6 +270,76 @@ angular.module('Calorie.services', [])
 	linkb: 'http://www.myrecipes.com/recipe/garlic-flatbreads-with-smoked-mozzarella-tomato-vinaigrette',
 	servesb: ' 12',
 	linkbcalories: ' 139'
+  }, {
+    id: 19,
+    name: 'Lamb Shoulder',
+    image: 'http://palmersbutchers.com/shop/wp-content/uploads/2012/06/35-Lamb-Shoulder.jpg',
+	quantity: ' 63g',
+	calories: ' 220 calories',
+	recipe: 'Lamb Shoulder Braised with Spring Vegetables, Green Herbs and White Wine',
+	link: 'http://www.myrecipes.com/recipe/fresh-apple-salsa',
+	serves: ' 8',
+	linkcalories: ' 325',
+	recipeb: 'Roast Lamb with Pomegranate Sauce',
+	linkb: 'http://www.myrecipes.com/recipe/roast-lamb-with-pomegranate',
+	servesb: ' 4',
+	linkbcalories: ' 317'
+  }, {
+    id: 20,
+    name: 'Lab rib',
+    image: 'http://www.foodsubs.com/Photos/lambribroast2.jpg',
+	quantity: ' 85g',
+	calories: ' 200 calories',
+	recipe: 'Herb Crusted Rack of Lamb',
+	link: 'http://www.myrecipes.com/recipe/herb-crusted-rack-lamb',
+	serves: ' 8',
+	linkcalories: ' 293',
+	recipeb: 'Spice Rubbed Rack of Lamb',
+	linkb: 'http://www.myrecipes.com/recipe/spice-rubbed-racks-of-lamb',
+	servesb: ' 4',
+	linkbcalories: ' 263'
+  }, {
+    id: 21,
+    name: 'Lamb leg',
+    image: 'http://www.mastermeats.com.au/images/EagleImage---Dave-Goudie-50.jpg',
+	quantity: ' 85g',
+	calories: ' 205 calories',
+	recipe: 'Simple Roasted Leg of Lamb',
+	link: 'http://www.myrecipes.com/recipe/simple-roasted-leg-of-lamb',
+	serves: ' 17',
+	linkcalories: ' 190',
+	recipeb: 'Sun Dries Tomato and Herb Stuffed Leg of Lamb',
+	linkb: 'http://www.myrecipes.com/recipe/sun-dried-tomato-herb-stuffed-leg-of-lamb',
+	servesb: ' 8',
+	linkbcalories: ' 231'
+  }, {
+    id: 22,
+    name: 'Beef steak',
+    image: 'http://ubons.net/wp-content/uploads/2012/01/Beef-steak-988x675.jpg',
+	quantity: ' 85g',
+	calories: ' 174 calories',
+	recipe: 'Italian Style Grilled Steak',
+	link: 'http://www.myrecipes.com/recipe/italian-style-grilled-steak',
+	serves: ' 4',
+	linkcalories: ' 489',
+	recipeb: 'Barbecued Asian Flank Steak',
+	linkb: 'http://www.myrecipes.com/recipe/barbecued-oriental-flank-steak',
+	servesb: ' 4',
+	linkbcalories: ' 310'
+  }, {
+    id: 23,
+    name: 'Beef mince',
+    image: 'https://www.ocado.com/productImages/777/77760011_1_640x640.jpg?identifier=5cd38f74ba8459408641d8eeed4764fe',
+	quantity: ' 85g',
+	calories: ' 245 calories',
+	recipe: 'Classic Meat Loaf',
+	link: 'http://www.myrecipes.com/recipe/classic-meat-loaf',
+	serves: ' 4',
+	linkcalories: ' 264',
+	recipeb: 'Bloody Mary Burgers',
+	linkb: 'http://www.myrecipes.com/recipe/bloody-mary-burgers',
+	servesb: ' 4',
+	linkbcalories: ' 351'
   }];
 
   return {
