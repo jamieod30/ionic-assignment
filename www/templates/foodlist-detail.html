@@ -1,12 +1,6 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
 <ion-view view-title="{{foodlist.name}}">
+  <!-- style taken from http://3.7designs.co/blog/2008/06/10-examples-of-beautiful-css-typography-and-how-they-did-it/ -->
   <style>
-  
   	p {font-family: Gill Sans, Verdana;
 	font-size: 11px;
 	line-height: 14px;
@@ -15,7 +9,8 @@
 	font-weight: bold;
 	}
 	</style>
-  <ion-content class="padding">
+<!-- format for the foodlist detail page -->
+	<ion-content class="padding">
     <img ng-src="{{foodlist.image}}" style="width: 64px; height: 64px">
 	<p>
       Quantity:{{foodlist.quantity}}
@@ -27,7 +22,7 @@
 	<p>
       recipes:
     </p>
-	<a ng-href="{{foodlist.link}}">
+	<a ng-href="{{foodlist.link}}"> <!-- angular href allows href to be changed based on id -->
       {{foodlist.recipe}}
     </a>
 	<p>
