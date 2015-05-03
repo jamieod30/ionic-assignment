@@ -1,9 +1,8 @@
 angular.module('Calorie.services', [])
 
 .factory('FoodList', function() {
-  // Might use a resource here that returns a JSON array
 
-  // Some fake testing data
+  // content that will show up in food list detail  used angular loop to call content
   var foodlist = [{
     id: 0,
     name: 'Apple',
@@ -398,6 +397,7 @@ angular.module('Calorie.services', [])
 	linkbcalories: ' 215'
   }];
 
+  // gets foodlist by id and returns foodlist
   return {
     all: function() {
       return foodlist;
