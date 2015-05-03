@@ -9,7 +9,15 @@ angular.module('Calorie.services', [])
     name: 'Apple',
     image: 'https://imagem.biz/wp-content/uploads/2014/11/ma%C3%A7%C3%A3-argentina.jpg',
 	quantity: ' medium 140g',
-	calories: ' 81 calories'
+	calories: ' 81 calories',
+	recipe: 'Fresh Apple Salsa',
+	link: 'http://www.myrecipes.com/recipe/fresh-apple-salsa',
+	serves: ' 12',
+	linkcalories: ' 21',
+	recipeb: 'Spiced Pork Tenderloin with Sautéed Apples',
+	linkb: 'http://www.myrecipes.com/recipe/spiced-pork-tenderloin-with-sauted-apples',
+	servesb: ' 4',
+	linkbcalories: ' 234'
   }];
 
   return {
