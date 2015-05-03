@@ -1,5 +1,5 @@
-<!-- this will be normal calculator menu-->
-<ion-view view-title="Menu">
+<ion-view view-title="Menu"> <!-- changed from calculator menu to just menu -->
+<!-- title and description style plus button size and position -->
 	<style>
 	h2 {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -28,8 +28,8 @@
  <ion-content>
 	<br>
 	<div class="list">
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/CalorieIntake.jpg">
+    <a class="item item-thumbnail-left" href="#"> <!--add image to left hand side of list -->
+      <img src="img/CalorieIntake.jpg"> <!-- http://www.awellfedlife.com/2015/01/calories-metabolism.html -->
       <h2>Daily Requirements</h2>
 	  <h3>Your recomended calorie intake</h3>
 	  <button class="button button-outline button-balanced" ui-sref="calculator">
@@ -39,7 +39,7 @@
 	</div>
 	<div class="list">
     <a class="item item-thumbnail-left" href="#">
-      <img src="img/bmi.png">
+      <img src="img/bmi.png"> <!-- http://www.awellfedlife.com/2015/01/calories-metabolism.html -->
       <h2> BMI </h2>
 	  <h3> Find out your Body Mass Index </h3>
 	  <button class="button button-outline button-balanced" ui-sref="bmi">
@@ -49,7 +49,7 @@
 	</div>
 	<div class="list">
     <a class="item item-thumbnail-left" href="#">
-      <img src="img/add.png">
+      <img src="img/add.png"> <!-- http://www.iconarchive.com/tag/add -->
       <h2> Calorie Counter </h2>
 	  <h3> Add up your daily calorie intake </h3>
 	  <button class="button button-outline button-balanced" ui-sref="counter">
