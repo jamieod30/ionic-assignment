@@ -28,13 +28,13 @@
 	width: 100px; 
 	height : 35px;
   }
-   
+   <!-- gets rid of spin button because it look really bad -->
   input[type=number]::-webkit-outer-spin-button,
   input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-
+<!-- formats input type number like input type text -->
   input[type=number] {
     -moz-appearance:textfield;
   }
@@ -62,7 +62,7 @@
             <input type="number" ng-model="height" placeholder ="centimeters"/>
           </label>
 		  <br>
-		 <button class="button button-outline button-balanced" id = "BMI" ng-click = "BMI = weight/(height*height)*10000">
+		 <button class="button button-outline button-balanced" id = "BMI" ng-click = "BMI = weight/(height*height)*10000"> <!-- formula for bmi -->
            BMI
           </button> 
 		  <br>
@@ -73,6 +73,7 @@
             <input type="number" ng-model="BMI"  />
           </label>
 		<br>
+		<!-- resets all fields to 0 -->
 			<button class="button button-outline button-balanced" ng-click="BMI= 0;weight=0;height=0">
             Reset
           </button>		
@@ -84,6 +85,7 @@
 	 </ion-view>
 	 <br>
 	 <br>
+	  <!-- footer contains back and home buttons for easy navigation -->
     <div class="bar bar-footer bar-stable">
 	<button class="button icon-left ion-arrow-left-a"ui-sref="tab.calculatormenu">
 		Back </button>	
