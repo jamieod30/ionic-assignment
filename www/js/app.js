@@ -15,7 +15,6 @@ angular.module('Calorie', ['ionic', 'Calorie.controllers', 'Calorie.services'])
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
     if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
       StatusBar.styleLightContent();
     }
   });
@@ -23,21 +22,17 @@ angular.module('Calorie', ['ionic', 'Calorie.controllers', 'Calorie.services'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
-  // Ionic uses AngularUI Router which uses the concept of states
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
   $stateProvider
 
-  // setup an abstract state for the tabs directive
+  // abstract state so tabs can be reused by each page
     .state('tab', {
     url: "/tab",
     abstract: true,
     templateUrl: "templates/tabs.html"
   })
 
-  // Each tab has its own nav history stack:
-
+  
+	// navigation for home page
   .state('tab.home', {
     url: '/home',
     views: {
@@ -48,6 +43,7 @@ angular.module('Calorie', ['ionic', 'Calorie.controllers', 'Calorie.services'])
     }
   })
 
+	// navigation for foodlist page
   .state('tab.foodlist', {
       url: '/foodlist',
       views: {
@@ -58,6 +54,7 @@ angular.module('Calorie', ['ionic', 'Calorie.controllers', 'Calorie.services'])
       }
     })
 	
+	// navigation for foodlist detail page
     .state('tab.foodlist-detail', {
       url: '/foodlist/:foodlistId',
       views: {
@@ -68,6 +65,7 @@ angular.module('Calorie', ['ionic', 'Calorie.controllers', 'Calorie.services'])
       }
     })
 
+	// navigation for calculatormenu page
   .state('tab.calculatormenu', {
     url: '/calculatormenu',
     views: {
@@ -78,16 +76,19 @@ angular.module('Calorie', ['ionic', 'Calorie.controllers', 'Calorie.services'])
     }
   })
   
+  // navigation for calculator page (not a sub page of tab therefore view:{} not needed)
     .state('calculator', {
     url: '/calculator',
     templateUrl: 'templates/calculator.html'
   })
   
+	// navigation for bmi page (not a sub page of tab therefore view:{} not needed)
     .state('bmi', {
     url: '/bmi',
     templateUrl: 'templates/bmi.html'
   })
   
+  // navigation for counter page (not a sub page of tab therefore view:{} not needed)
     .state('counter', {
     url: '/counter',
     templateUrl: 'templates/counter.html'
