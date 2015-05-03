@@ -23,12 +23,13 @@
 	
   </head>
   <style>
+     <!-- gets rid of spin button because it look really bad -->
   input[type=number]::-webkit-outer-spin-button,
   input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-
+<!-- formats input type number like input type text -->
   input[type=number] {
     -moz-appearance:textfield;
   }
@@ -47,7 +48,7 @@
     </div>
       <ion-content>
 	  <br>
-	  
+	  <!-- allows you to input the amount of calories you've eaten for the day and add them up -->
 	  <div class="list">
 			<a class="item item-thumbnail-left" href="#">
 			<img src="img/breakfast.jpg">
@@ -80,6 +81,7 @@
 			<input type="number" ng-model="countsnacks" />
 			</label>
 			</a>
+			   <!-- adds up numbers but in fields and assigns them to count -->
 	    <button class="button button-outline button-block button-balanced" ng-click="count = countbreakfast + countlunch + countdinner +countsnacks">
             Calculate
         </button> 
@@ -88,9 +90,10 @@
 			<img src="img/equals.jpg">
 			<p>Todays Calories</p>
 			<label class="item item-input">
-			<input type="text" ng-model="count" />
+			<input type="text" ng-model="count" />	<!-- assigns count to this field -->
 			</label>
 			</a>
+			<!-- resets all fields to 0 -->
 	   <button class="button button-outline button-block button-balanced" ng-click="count=0;countbreakfast=0;countlunch=0;countdinner=0;countsnacks=0">
             Reset
         </button> 
@@ -98,11 +101,9 @@
 	  <br>
 	  <br>	
 	  <br>
-	  <br>
-	  <br>	
-	  <br>
       </ion-content>
 	  </ion-view>
+	  <!-- footer contains back and home buttons for easy navigation -->
      <div class="bar bar-footer bar-stable">
 	<button class="button icon-left ion-arrow-left-a"ui-sref="tab.calculatormenu">
 		Back </button>	
