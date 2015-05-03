@@ -340,6 +340,62 @@ angular.module('Calorie.services', [])
 	linkb: 'http://www.myrecipes.com/recipe/bloody-mary-burgers',
 	servesb: ' 4',
 	linkbcalories: ' 351'
+  }, {
+    id: 24,
+    name: 'Beef shoulder',
+    image: 'http://www.foodsubs.com/Photos/crossribroastbeef.jpg',
+	quantity: ' 85g',
+	calories: ' 183 calories',
+	recipe: 'Herb Roasted Beef and Potatoes',
+	link: 'http://www.myrecipes.com/recipe/herb-roasted-beef-potatoes',
+	serves: ' 4',
+	linkcalories: ' 318',
+	recipeb: 'Beef Pot Roast and Gravy',
+	linkb: 'http://www.myrecipes.com/recipe/beef-pot-roast-gravy',
+	servesb: ' 12',
+	linkbcalories: ' 264'
+  }, {
+    id: 25,
+    name: 'Chicken breast',
+    image: 'http://www.weightlossladder.com/wp-content/uploads/2012/04/grilled-skinless-chicken-breast.jpg',
+	quantity: ' 100g',
+	calories: ' 165 calories',
+	recipe: 'Chicken Breasts Stuffed with Spinach and Ricotta',
+	link: 'http://www.myrecipes.com/recipe/chicken-breasts-stuffed-with-spinach-ricotta',
+	serves: ' 6',
+	linkcalories: ' 265',
+	recipeb: 'Spiced Grilled Chicken Breasts',
+	linkb: 'http://www.myrecipes.com/recipe/spiced-grilled-chicken-breasts-with-corn-pepper-relish',
+	servesb: ' 4',
+	linkbcalories: ' 333'
+  }, {
+    id: 26,
+    name: 'Chicken wing',
+    image: 'http://mikeyllo.com/blog/wp-content/uploads/2009/05/Chicken-Wing-300x224.jpg',
+	quantity: ' 100g',
+	calories: ' 290 calories',
+	recipe: 'Garlic-Buffalo Drumettes',
+	link: 'http://www.myrecipes.com/recipe/garlic-buffalo-drumettes',
+	serves: ' 4',
+	linkcalories: ' 310',
+	recipeb: 'Pan-Fried Chicken',
+	linkb: 'http://www.myrecipes.com/recipe/pan-fried-chicken-0',
+	servesb: ' 4',
+	linkbcalories: ' 245'
+  }, {
+    id: 27,
+    name: 'Chicken leg',
+    image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTptnNngAPBEY3bn85yEiCSzjEuEFsKOgFzUUE2N-F3bzehe47T9g',
+	quantity: ' 100g',
+	calories: ' 191 calories',
+	recipe: 'Tangy Chicken Legs',
+	link: 'http://www.myrecipes.com/recipe/tangy-chicken-legs',
+	serves: ' 2',
+	linkcalories: ' 195',
+	recipeb: 'Marinated Grilled Chicken Legs',
+	linkb: 'http://www.myrecipes.com/recipe/marinated-grilled-chicken-legs',
+	servesb: ' 4',
+	linkbcalories: ' 215'
   }];
 
   return {
