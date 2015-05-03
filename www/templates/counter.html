@@ -22,7 +22,22 @@
     <script src="js/app.js"></script> 
 	
   </head>
+  <style>
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
   
+  button {
+	width: 100px; 
+	height : 35px;
+  }
+  </style>
   <body ng-app="Calorie" ng-controller="CounterCtrl">
 
 	
@@ -65,7 +80,6 @@
 			<input type="number" ng-model="countsnacks" />
 			</label>
 			</a>
-			
 	    <button class="button button-outline button-block button-balanced" ng-click="count = countbreakfast + countlunch + countdinner +countsnacks">
             Calculate
         </button> 
