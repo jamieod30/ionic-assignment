@@ -3,6 +3,7 @@ angular.module('Calorie.services', [])
 .factory('FoodList', function() {
 
   // content that will show up in food list detail  used angular loop to call content
+  // all recipes taken from website www.myrecipes.com for continuity -->
   var foodlist = [{
     id: 0,
     name: 'Apple',
@@ -55,10 +56,10 @@ angular.module('Calorie.services', [])
 	link: 'http://www.myrecipes.com/recipe/basic-beef-stew-with-carrots-mushrooms',
 	serves: ' 8',
 	linkcalories: ' 303',
-	recipeb: 'Crab Cocktail with Parmesan Chips',
-	linkb: 'www.myrecipes.com/recipe/crab-cocktail-with-parmesan-chips',
-	servesb: ' 2',
-	linkbcalories: ' 128'
+	recipeb: 'Crab Toast with Carrot and Scallion',
+	linkb: 'http://www.myrecipes.com/recipe/crab-toast-carrot-scallion',
+	servesb: ' 8',
+	linkbcalories: ' 65'
   }, {
     id: 4,
     name: 'Cauliflower',
