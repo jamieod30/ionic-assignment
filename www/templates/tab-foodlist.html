@@ -1,5 +1,5 @@
-<!-- this will be food list menu -->
 <ion-view view-title="Food List">
+<!-- style taken from http://3.7designs.co/blog/2008/06/10-examples-of-beautiful-css-typography-and-how-they-did-it/ -->
 	<style>
 	h2 {
 	font-family:Georgia,serif;
@@ -9,11 +9,12 @@
 	</style>
   <ion-content>
     <ion-list>
+	<!-- sets up loop to go through services and take image and name based of id and print them to foodlist -->
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="foodlist in foodlist" type="item-text-wrap" href="#/tab/foodlist/{{foodlist.id}}">
         <img ng-src="{{foodlist.image}}">
         <h2>{{foodlist.name}}</h2>
         <i class="icon ion-chevron-right icon-accessory"></i>
-
+<!-- sliding a field left shows delete button giving you options to remove items in list -->
         <ion-option-button class="button-assertive" ng-click="remove(foodlist)">
           Delete
         </ion-option-button>
