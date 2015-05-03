@@ -15,6 +15,9 @@ angular.module('Calorie.controllers', [])
 	
 .controller("CalculatorCtrl", function($scope) {})
 
+.controller('FoodListDetailCtrl', function($scope, $stateParams, FoodList) {
+  $scope.foodlist = FoodList.get($stateParams.foodlistId);
+})
 
 .controller('CalculatormenuCtrl', function($scope) {
   $scope.settings = {
