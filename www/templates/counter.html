@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Counter</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js-->
+    <script src="js/app.js"></script> 
+	
+  </head>
+  
+  <body ng-app="Calorie" ng-controller="CounterCtrl">
+
+	
+    <ion-pane>
+        <ion-view title="Counter">
+		
+    </div>
+      <ion-content>
+	  <br>
+	  
+	  <div class="list">
+			<a class="item item-thumbnail-left" href="#">
+			<img src="img/breakfast.jpg">
+			<p>Enter Calories for Breakfast</p>
+			<label class="item item-input">
+			<input type="number" ng-model="countbreakfast" />
+			</label>
+			</a>
+		
+			<a class="item item-thumbnail-left" href="#">
+			<img src="img/lunch.jpg">
+			<p>Enter Calories for Lunch</p>
+			<label class="item item-input">
+			<input type="number" ng-model="countlunch" />
+			</label>
+			</a>
+		
+			<a class="item item-thumbnail-left" href="#">
+			<img src="img/dinner.jpg">
+			<p>Enter Calories for Dinner</p>
+			<label class="item item-input">
+			<input type="number" ng-model="countdinner" />
+			</label>
+			</a>
+	
+			<a class="item item-thumbnail-left" href="#">
+			<img src="img/snacks.jpg">
+			<p>Enter Calories for Snacks</p>
+			<label class="item item-input">
+			<input type="number" ng-model="countsnacks" />
+			</label>
+			</a>
+			
+	    <button class="button button-outline button-block button-balanced" ng-click="count = countbreakfast + countlunch + countdinner +countsnacks">
+            Calculate
+        </button> 
+
+			<a class="item item-thumbnail-left">
+			<img src="img/equals.jpg">
+			<p>Todays Calories</p>
+			<label class="item item-input">
+			<input type="text" ng-model="count" />
+			</label>
+			</a>
+	   <button class="button button-outline button-block button-balanced" ng-click="count=0;countbreakfast=0;countlunch=0;countdinner=0;countsnacks=0">
+            Reset
+        </button> 
+	  </div>
+	  <br>
+	  <br>	
+	  <br>
+	  <br>
+	  <br>	
+	  <br>
+      </ion-content>
+	  </ion-view>
+     <div class="bar bar-footer bar-stable">
+	<button class="button icon-left ion-arrow-left-a"ui-sref="tab.calculatormenu">
+		Back </button>	
+	<button class="button icon-right ion-home"ui-sref="tab.home">
+		Home </button
+        <div class="title"></div>
+    </ion-pane>
+	
+  </body>
+</html>
