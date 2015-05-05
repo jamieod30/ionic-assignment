@@ -1,6 +1,6 @@
 # Mobile Application Development Project 
 ## Jamie O'Donovan Student Number: G00272510
-This application was created to meet the specifications laid out as part of the mobile programming module for GMIT Higher Diploma on Science in Computing. The app is developed using Ionic Framework and Cordova.
+This application was created to meet the specifications laid out as part of the mobile programming module for GMIT Higher Diploma on Science in Computing. The app is developed using Ionic Framework and Cordova and available on Github at https://github.com/jamieod30/ionic-assignment
 
 ##Summary of Requirements
 Create a cross-platform mobile application that allows you to keep track of calories. The app could display the calories in common everyday foods, let users input the amount of calories they are consuming or both. Extra functionality beyond these ideas is welcome.
